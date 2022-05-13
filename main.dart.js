@@ -15153,8 +15153,9 @@ return P.ah(C.iU.n9(0,new E.a17(a,"tooltip").a5s()),$async$YJ)
 case 2:return P.Y(null,r)}})
 return P.Z($async$YJ,r)}},T={lB:function lB(a){this.a=a},IB:function IB(a){this.a=null
 this.b=a
-this.c=null},a4S:function a4S(a){this.a=a},a4N:function a4N(){},a4O:function a4O(a,b){this.a=a
-this.b=b},a4P:function a4P(a,b){this.a=a
+this.c=null},a4S:function a4S(a){this.a=a},a4N:function a4N(){},a4O:function a4O(a,b,c){this.a=a
+this.b=b
+this.c=c},a4P:function a4P(a,b){this.a=a
 this.b=b},a4Q:function a4Q(a,b){this.a=a
 this.b=b},a4R:function a4R(){},
 apK(a,b,c,d){var s,r,q,p=b.length
@@ -33437,38 +33438,40 @@ at(){return new T.IB(C.m)}}
 T.IB.prototype={
 H(a,b){return M.rO(new T.a4S(b.M(t.w).f.a),null,null,null,t.iu)}}
 T.a4S.prototype={
-$1(a){var s,r,q,p,o,n,m,l,k,j,i,h,g,f=null,e=this.a.a,d=e>500
-if(d||a.dx.length===0)Y.ny($.aW())
+$1(a){var s,r,q,p,o,n,m,l,k,j,i,h,g,f,e,d,c=null
 for(s=a.dx,r=s.length,q=0,p=0;p<r;++p){o=s[p]
 n=o.b
 n.toString
 m=o.d
 m.toString
-q+=n*m}d=d?f:E.zC(f,!0,f,!0,f,B.hs(f,C.Ad,24,new T.a4N(),f),f,C.K3)
-e=e<=500
-r=e?C.k:C.hD.h(0,100)
-n=t.p
-m=H.a([],n)
-for(l=s.length,p=0;p<s.length;s.length===l||(0,H.G)(s),++p){o=s[p]
-k=B.hs(f,C.Ai,24,new T.a4O(a,o),f)
-j=L.e3(o.c,2,C.bu,f,f,f,f)
-i=$.acC()
-h=o.b
-h.toString
-g=o.d
-g.toString
-m.push(M.dc(f,T.jG(H.a([T.iT(H.a([k,C.Gv,new T.rw(1,C.dY,T.jG(H.a([j,C.Gy,L.e3(i.Jb(h*g),f,f,f,C.vO,f,f)],n),C.c3,C.an,C.ao),f),T.iT(H.a([B.hs(f,C.Ah,24,new T.a4P(a,o),f),L.e3(H.d(o.b),f,f,f,f,f,f),B.hs(f,C.h6,24,new T.a4Q(a,o),f)],n),C.aj,C.an,C.ao)],n),C.aj,C.cf,C.ao),new Z.AP(30,f)],n),C.c3,C.an,C.ao),C.t,C.a1,f,f,f,f,f,f,new V.at(15,15,15,0),f,f,f))}s=E.afl(T.jG(m,C.aj,C.an,C.ao))
-e=e?new V.at(15,15,15,15):C.ah
-n=U.ab3(f,f,C.eD,f,f,f,f,f,f,f,f,f,f,f,f,f,f,f,f)
-return M.uX(d,r,s,new T.c8(e,U.afz(new T.c8(C.jH,L.e3($.acC().Jb(q),f,f,f,C.vP,f,f),f),new T.a4R(),n),f),f,f)},
+q+=n*m}r=this.a
+n=r.a
+m=n>500?c:E.zC(c,!0,c,!0,c,B.hs(c,C.Ad,24,new T.a4N(),c),c,C.K3)
+n=n<=500
+l=n?C.k:C.hD.h(0,100)
+k=t.p
+j=H.a([],k)
+for(i=s.length,p=0;p<s.length;s.length===i||(0,H.G)(s),++p){o=s[p]
+h=B.hs(c,C.Ai,24,new T.a4O(a,o,r),c)
+g=L.e3(o.c,2,C.bu,c,c,c,c)
+f=$.acC()
+e=o.b
+e.toString
+d=o.d
+d.toString
+j.push(M.dc(c,T.jG(H.a([T.iT(H.a([h,C.Gv,new T.rw(1,C.dY,T.jG(H.a([g,C.Gy,L.e3(f.Jb(e*d),c,c,c,C.vO,c,c)],k),C.c3,C.an,C.ao),c),T.iT(H.a([B.hs(c,C.Ah,24,new T.a4P(a,o),c),L.e3(H.d(o.b),c,c,c,c,c,c),B.hs(c,C.h6,24,new T.a4Q(a,o),c)],k),C.aj,C.an,C.ao)],k),C.aj,C.cf,C.ao),new Z.AP(30,c)],k),C.c3,C.an,C.ao),C.t,C.a1,c,c,c,c,c,c,new V.at(15,15,15,0),c,c,c))}s=E.afl(T.jG(j,C.aj,C.an,C.ao))
+r=n?new V.at(15,15,15,15):C.ah
+n=U.ab3(c,c,C.eD,c,c,c,c,c,c,c,c,c,c,c,c,c,c,c,c)
+return M.uX(m,l,s,new T.c8(r,U.afz(new T.c8(C.jH,L.e3($.acC().Jb(q),c,c,c,C.vP,c,c),c),new T.a4R(),n),c),c,c)},
 $S:71}
 T.a4N.prototype={
 $0(){Y.ny($.aW())},
 $S:0}
 T.a4O.prototype={
-$0(){var s=this.b.a
-s.toString
-this.a.Kv(s)},
+$0(){var s=this.a,r=this.b.a
+r.toString
+s.Kv(r)
+if(this.c.a>500||s.dx.length===0)Y.ny($.aW())},
 $S:0}
 T.a4P.prototype={
 $0(){this.a.Kt(this.b)},
@@ -65477,7 +65480,7 @@ C.IE=new A.r(!1,null,null,null,null,null,14,C.aT,null,null,null,C.L,null,null,nu
 C.Hm=new A.r(!1,null,null,null,null,null,10,C.P,null,1.5,null,C.L,null,null,null,null,null,null,null,null,null,"englishLike overline 2014",null,null,null)
 C.K1=new R.dh(C.I9,C.Ia,C.Ib,C.Ic,C.Id,C.I2,C.HW,C.IO,C.IP,C.IQ,C.HC,C.IE,C.Hm)
 C.vR=new U.Fn("TextWidthBasis.longestLine")
-C.K3=new L.hP("List Products",null,null,null,null,null,null,null)
+C.K3=new L.hP("List Buy",null,null,null,null,null,null,null)
 C.vS=new S.Fp("ThemeMode.system")
 C.K8=new S.Fp("ThemeMode.dark")
 C.K9=new M.vN(null)
